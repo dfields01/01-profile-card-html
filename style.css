@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A short description of the page for SEO and accessibility." />
+
+    <title>My Webpage</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Open Graph (social) -->
+    <meta property="og:title" content="My Webpage" />
+    <meta property="og:description" content="A short description of the page for social shares." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="/images/og-image.png" />
+
+    <!-- Mobile web app capable -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favored practice: defer non-critical JS -->
+    <script defer src="/scripts/main.js"></script>
+  </head>
+
+  <body>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header role="banner">
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" role="main">
+      <section>
+        <h1>Welcome to My Webpage</h1>
+        <p>This is the basic HTML boilerplate. Replace this content with your own.</p>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; <span id="year"></span> My Webpage — All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Small inline script to update the copyright year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Helpful comments:
+         - Put most styles in style.css
+         - Put most scripts in /scripts/main.js and load with defer
+         - Add meta tags for SEO and social sharing as needed
+    -->
+  </body>
+</html>
